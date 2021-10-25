@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1127202-9544-4054-aee4-5cb401dc4b45" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baoge/SpringClientAop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baoge/aop/advisor/MyAdvisor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baoge/aop/service/MyService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baoge/aop/service/impl/MyServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/applicationContext-aop.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/baoge/SpringClientAop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/baoge/SpringClientAop.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -199,7 +195,7 @@
       <workItem from="1623860777703" duration="1576000" />
       <workItem from="1623941675627" duration="3345000" />
       <workItem from="1627996584627" duration="635000" />
-      <workItem from="1635166369239" duration="2510000" />
+      <workItem from="1635166369239" duration="3144000" />
     </task>
     <servers />
   </component>
