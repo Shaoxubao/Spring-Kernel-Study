@@ -2,7 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1127202-9544-4054-aee4-5cb401dc4b45" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/baoge/SpringClientAop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/baoge/SpringClientAop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baoge/dynamicproxy/DynamicProxyClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baoge/dynamicproxy/DynamicSubject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baoge/dynamicproxy/RealSubject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baoge/dynamicproxy/Subject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baoge/proxy/ProxyClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baoge/proxy/ProxyTarget.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baoge/proxy/RealTarget.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baoge/proxy/Target.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.7/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.7/fileContent/fileContent.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.7/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.7/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.7/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.7/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.7/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.7/taskHistory/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.7/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.7/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/baoge/SpringClientAop.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/baoge/SpringClientAop.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,6 +52,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -56,11 +71,12 @@
   <component name="ProjectId" id="1u2KsHlbN8uVXNXIchShiScP0SZ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="ToolWindowRun.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.ActionScript" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.deploy.options" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -87,7 +103,34 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SpringClientAop">
+  <component name="RunManager" selected="Application.DynamicProxyClient">
+    <configuration name="DynamicProxyClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.baoge.dynamicproxy.DynamicProxyClient" />
+      <module name="spring-kernel-lecture.main" />
+      <option name="VM_PARAMETERS" value="-Dsun.misc.ProxyGenerator.saveGeneratedFiles=true" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.baoge.dynamicproxy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProxyClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.baoge.proxy.ProxyClient" />
+      <module name="spring-kernel-lecture.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.baoge.proxy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SpringClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.baoge.SpringClient" />
       <module name="spring-kernel-lecture.main" />
@@ -114,25 +157,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="spring-kernel-lecture [assemble]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="assemble" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
     <configuration name="spring-kernel-lecture [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -152,32 +176,20 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="spring-kernel-lecture [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="clean" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
+    <list>
+      <item itemvalue="Application.DynamicProxyClient" />
+      <item itemvalue="Application.ProxyClient" />
+      <item itemvalue="Application.SpringClient" />
+      <item itemvalue="Application.SpringClientAop" />
+      <item itemvalue="Gradle.spring-kernel-lecture [build]" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DynamicProxyClient" />
+        <item itemvalue="Application.ProxyClient" />
         <item itemvalue="Application.SpringClientAop" />
         <item itemvalue="Application.SpringClient" />
         <item itemvalue="Gradle.spring-kernel-lecture [build]" />
-        <item itemvalue="Gradle.spring-kernel-lecture [clean]" />
-        <item itemvalue="Gradle.spring-kernel-lecture [assemble]" />
       </list>
     </recent_temporary>
   </component>
@@ -195,7 +207,7 @@
       <workItem from="1623860777703" duration="1576000" />
       <workItem from="1623941675627" duration="3345000" />
       <workItem from="1627996584627" duration="635000" />
-      <workItem from="1635166369239" duration="5195000" />
+      <workItem from="1635166369239" duration="7485000" />
     </task>
     <servers />
   </component>
