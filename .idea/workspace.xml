@@ -2,21 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1127202-9544-4054-aee4-5cb401dc4b45" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baoge/dynamicproxy/DynamicProxyClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baoge/dynamicproxy/DynamicSubject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baoge/dynamicproxy/RealSubject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baoge/dynamicproxy/Subject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baoge/proxy/ProxyClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baoge/proxy/ProxyTarget.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baoge/proxy/RealTarget.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baoge/proxy/Target.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baoge/SpringClientTransaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baoge/dao/StudentDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baoge/dao/impl/StudentDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baoge/service/StudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baoge/service/impl/StudentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/applicationContext-transaction.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.7/fileContent/annotation-processors.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.7/fileContent/annotation-processors.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.7/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.7/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.7/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.7/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.7/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.7/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.7/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.7/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.7/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.7/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.7/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.7/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/baoge/SpringClientAop.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/baoge/SpringClientAop.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/spring-kernel-lecture-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,6 +43,17 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="spring-kernel-lecture" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="spring-kernel-lecture" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="spring-kernel-lecture" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -103,7 +116,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.DynamicProxyClient">
+  <component name="RunManager" selected="Application.SpringClientTransaction">
     <configuration name="DynamicProxyClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.baoge.dynamicproxy.DynamicProxyClient" />
       <module name="spring-kernel-lecture.main" />
@@ -131,19 +144,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpringClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.baoge.SpringClient" />
-      <module name="spring-kernel-lecture.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.baoge.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SpringClientAop" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.baoge.SpringClientAop" />
       <module name="spring-kernel-lecture.main" />
@@ -157,7 +157,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="spring-kernel-lecture [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SpringClientTransaction" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.baoge.SpringClientTransaction" />
+      <module name="spring-kernel-lecture.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.baoge.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="spring-kernel-lecture [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -168,7 +181,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="build" />
+            <option value="clean" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -179,17 +192,17 @@
     <list>
       <item itemvalue="Application.DynamicProxyClient" />
       <item itemvalue="Application.ProxyClient" />
-      <item itemvalue="Application.SpringClient" />
       <item itemvalue="Application.SpringClientAop" />
-      <item itemvalue="Gradle.spring-kernel-lecture [build]" />
+      <item itemvalue="Application.SpringClientTransaction" />
+      <item itemvalue="Gradle.spring-kernel-lecture [clean]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.spring-kernel-lecture [clean]" />
+        <item itemvalue="Application.SpringClientTransaction" />
         <item itemvalue="Application.DynamicProxyClient" />
         <item itemvalue="Application.ProxyClient" />
         <item itemvalue="Application.SpringClientAop" />
-        <item itemvalue="Application.SpringClient" />
-        <item itemvalue="Gradle.spring-kernel-lecture [build]" />
       </list>
     </recent_temporary>
   </component>
@@ -207,7 +220,8 @@
       <workItem from="1623860777703" duration="1576000" />
       <workItem from="1623941675627" duration="3345000" />
       <workItem from="1627996584627" duration="635000" />
-      <workItem from="1635166369239" duration="7485000" />
+      <workItem from="1635166369239" duration="7736000" />
+      <workItem from="1635777992010" duration="3318000" />
     </task>
     <servers />
   </component>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+
+   <bean id="dataSource" class="org.apache.tomcat.jdbc.pool.DataSource" destroy-method="close" autowire="no">
+       <property name="url" value="jdbc:mysql://localhost:3306/test?serverTimezone=UTC&amp;useUnicode=true&amp;characterEncoding=UTF-8&amp;useSSL=false"></property>
+       <property name="username" value="root"></property>
+       <property name="password" value="12345678"></property>
+       <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"></property>
+       <property name="minIdle" value="1"/>
+       <property name="maxIdle" value="5"/>
+       <property name="maxActive" value="100"/>
+       <property name="initialSize" value="1"/>
+       <property name="testOnBorrow" value="true"/>
+       <property name="validationQuery" value="select 1"/>
+       <property name="testOnReturn" value="true"/>
+       <property name="validationInterval" value="500000"/>
+       <property name="removeAbandoned" value="true"/>
+       <property name="removeAbandonedTimeout" value="30"/>
+       <property name="fairQueue" value="false"/>
+       <property name="defaultAutoCommit" value="false"/>
+   </bean>
+
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <bean id="studentDao" class="com.baoge.dao.impl.StudentDaoImpl">
+        <property name="jdbcTemplate" ref="jdbcTemplate"/>
+    </bean>
+
+    <bean id="studentService" class="com.baoge.service.impl.StudentServiceImpl">
+        <property name="studentDao" ref="studentDao"/>
+    </bean>
+
+    <bean id="studentServiceProxy" class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+        <property name="transactionManager" ref="transactionManager"/>
+        <property name="target" ref="studentService"/>
+        <property name="transactionAttributes">
+            <props>
+                <prop key="save*">PROPAGATION_REQUIRED</prop>
+                <prop key="update*">PROPAGATION_REQUIRED</prop>
+                <prop key="remove*">PROPAGATION_REQUIRED</prop>
+                <prop key="get*">PROPAGATION_REQUIRED, readOnly</prop>
+            </props>
+        </property>
+    </bean>
+
+</beans>

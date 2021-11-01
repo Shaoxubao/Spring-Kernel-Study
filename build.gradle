@@ -31,7 +31,9 @@ dependencies {
             "org.springframework:spring-webmvc:5.2.5.RELEASE",
             "org.springframework:spring-jdbc:5.2.5.RELEASE",
             "org.springframework:spring-instrument:5.2.5.RELEASE",
-            "org.springframework:spring-tx:5.2.5.RELEASE"
+            "org.springframework:spring-tx:5.2.5.RELEASE",
+            "mysql:mysql-connector-java:8.0.20",
+            "org.apache.tomcat:tomcat-jdbc:9.0.34"
     )
 }
 
